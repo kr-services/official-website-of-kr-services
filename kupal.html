@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KR SERVICES</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url(background02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      header {
+        position: relative;
+        background-image: url("background04.jpg");
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Hamburger styles */
+      .hamburger-container {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 1001;
+      }
+
+      .hamburger {
+        cursor: pointer;
+      }
+
+      .hamburger div {
+        width: 30px;
+        height: 4px;
+        background-color: #fff;
+        margin: 5px 0;
+        border-radius: 2px;
+      }
+
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: white;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        min-width: 120px;
+        z-index: 1002;
+      }
+
+      .dropdown-menu a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #333;
+        font-size: 0.95rem;
+      }
+
+      .dropdown-menu a:hover {
+        background-color: #5ec1f6;
+        color: white;
+      }
+
+      header img {
+        width: 150px;
+        height: auto;
+      }
+
+      h1 {
+        margin: 20px 0;
+        font-size: 2.5rem;
+        color: #5ec1f6;
+      }
+
+      .signup-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 5px 10px;
+        background-color: #d2cecc;
+        color: rgb(23, 22, 22);
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: background-color 0.3s;
+      }
+
+      .signup-btn:hover {
+        background-color: #c9c6c5;
+      }
+
+      .services-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .service {
+        background-color: #dbd1d1;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 280px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .service:hover {
+        transform: translateY(-10px);
+      }
+
+      .service img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+      }
+
+      .service h2 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      .service p {
+        color: #555;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- Hamburger icon with dropdown -->
+    </div class="hamburger-container">
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="dropdown-menu" id="dropdownMenu">
+          <a href="#">More Info</a>
+          <a href="#">Settings</a>
+          <a href="#">Contact us</a>
+          <a href="#">About us</a>
+      </div>
+
+      <!-- Logo and title -->
+      <img
+        src="kupal logo-8d0d84b0cd3b3fcd3ef8c9f53305a5d8.webp"
+        alt="KR Riders Logo"
+      />
+      <h1><span style="font-style: italic">KUPAL RIDERS inc.</span></h1>
+
+      <!-- Login button -->
+      <button class="signup-btn" onclick="window.location.href='signup.html';">
+        Login
+      </button>
+    </header>
+
+    <h2>OUR SERVICES</h2>
+    <div class="services-container">
+      <div class="service">
+        <img src="naka sakay.jpeg" alt="Angkas" />
+        <h2>🛵 Angkas</h2>
+        <p>Mag-book ng mabilis at ligtas na biyahe gamit ang aming serbisyo.</p>
+      </div>
+      <div class="service">
+        <img src="fooddeliveryappinsouthafirca.webp" alt="Hatid Pagkain" />
+        <h2>🍔 Hatid Pagkain</h2>
+        <p>
+          Mag-order mula sa iyong paboritong kainan at ihahatid namin ito
+          diretso sa iyong pintuan.
+        </p>
+      </div>
+      <div class="service">
+        <img src="grocery delevery.jpeg" alt="Online Grocery Delivery" />
+        <h2>🛒 Online Grocery Delivery</h2>
+        <p>
+          Mamili ng iyong mga pangangailangan sa grocery online at ipapadala
+          namin ito sa iyong address.
+        </p>
+      </div>
+      <div class="service">
+        <img src="lipat bahay.jpeg" alt="Lipat-Bahay" />
+        <h2>🏠 Lipat-Bahay</h2>
+        <p>
+          Nag-aalok kami ng serbisyo para sa iyong mga gamit mula sa isang bahay
+          patungo sa iba.
+        </p>
+      </div>
+      <div class="service">
+        <img src="travel.png" alt="Tour & Travel" />
+        <h2>✈️ Tour & Travel</h2>
+        <p>
+          Planuhin ang iyong susunod na bakasyon kasama kami. Nag-aalok kami ng
+          mga tour packages at iba pang travel services.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("dropdownMenu");
+        menu.style.display = menu.style.display === "block" ? "none" : "block";
+      }
+
+      // Optional: close dropdown when clicking outside
+      window.onclick = function (event) {
+        const menu = document.getElementById("dropdownMenu");
+        const hamburger = document.querySelector(".hamburger-container");
+        if (!hamburger.contains(event.target)) {
+          menu.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
